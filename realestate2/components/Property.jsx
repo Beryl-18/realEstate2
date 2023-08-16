@@ -10,7 +10,7 @@ import DefaultImage from '../assets/images/house.jpg'
 
 const Property = ({property : {coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalId}}) => (
     <Link href={`/property/${externalId }`} passHref>
-        <Flex flexWrap="wrap" w="420" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
+        <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
             <Box>
                 <Image src={coverPhoto? coverPhoto.url : DefaultImage} alt="house" width={300} height={260} />
             </Box>
@@ -22,7 +22,7 @@ const Property = ({property : {coverPhoto, price, rentFrequency, rooms, title, b
 
                     </Flex>
                     <Box>
-                        <Avatar src={agency?.logo?.url} size="lg" />
+                        <Avatar src={agency?.logo?.url} size="sm" />
                     </Box>
                 </Flex>
                 <Flex alignItems="center" p="1" justifyContent="space-between" w="250" color="blue.400" >
